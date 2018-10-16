@@ -1,0 +1,56 @@
+{
+  "name": "telebot",
+  "version": "1.0.0",
+  "description": "The easy way to write Telegram bots.",
+  "main": "lib/telebot.js",
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "dependencies": {
+    "btoa": "^1.2.1",
+    "datauri": "^1.1.0",
+    "file": "^0.2.2",
+    "file-base64": "^1.0.0",
+    "filereader": "^0.10.3",
+    "forever": "^0.15.3",
+    "fs-readfile-promise": "^3.0.1",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "jsonfile": "^4.0.0",
+    "request": "^2.81.0",
+    "xhr2": "^0.1.4",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "eslint": "^3.19.0"
+  },
+  "scripts": {
+    "test": "ava test/index.js",
+    "lint": "eslint **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mullwar/telebot.git"
+  },
+  "keywords": [
+    "bot",
+    "api",
+    "wrapper",
+    "telebot",
+    "telegram",
+    "telegram api",
+    "telegram bot",
+    "telegram bot api"
+  ],
+  "author": "Mullwar <mullwar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mullwar/telebot/issues"
+  },
+  "homepage": "https://github.com/mullwar/telebot",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  }
+}
