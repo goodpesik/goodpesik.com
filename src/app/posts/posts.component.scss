@@ -1,0 +1,43 @@
+.post {
+    min-height: 320px;
+    border-radius: 2px;
+    box-shadow: 3px 0 20px rgba(0,0,0,.12);
+    overflow: hidden;
+    margin: 0 0 20px;
+    cursor: pointer;
+
+    .title {
+        font-size: 20px;
+        line-height: 24px;
+        color: #000;
+    }
+
+    .date {
+        color: rgb(184, 175, 175);
+    }
+
+    .holder {
+        padding: 10px;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        min-height: 152px;
+        background: #ccc;
+    }
+
+    &__container {
+        height: calc(100vh - 100px);
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @media only screen and (max-device-width: 1024px) {
+            height: 100vh;
+         }
+    }
+}

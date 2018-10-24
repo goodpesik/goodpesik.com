@@ -1,10 +1,20 @@
 body {
     background: #000;
     padding: 10px;
+    font: 18px/22px 'Roboto Condensed', Arial, sans-serif;
 }
 .main-container {
     background: #fff;
     padding: 40px;
     padding-right: 0;
+    padding-left: 0;
     position: relative;
+
+    @media only screen and (max-device-width: 1024px) {
+       padding: 20px 0;
+    }
+}
+
+.btn {
+    text-transform: uppercase;
 }

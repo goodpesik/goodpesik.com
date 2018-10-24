@@ -1,11 +1,10 @@
 <div class="single-post" *ngIf="post">
-  <h1>{{post.title}}</h1>
-  <h2>ID: {{post.id}}</h2>
-  <img *ngIf="post.photo" [src]="image" alt="">
-  <span>post date: {{ post.date | date }}</span>
+  <h1 class="title">{{post.title}}</h1>
+  <span class="date">{{ post.date | date }}</span>
+  <img class="image" *ngIf="post.photo" [src]="image" alt="photo">
   <p>{{post.description}}</p>
+  <button class="btn btn-primary" (click)="goBack()">go back</button>
 </div>
-<button (click)="goBack()">go back</button>
 <div class="fb-like" 
     data-href="https://goodpesik.com/postDetail" 
     data-layout="standard" 

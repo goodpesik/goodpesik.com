@@ -1,9 +1,19 @@
-<div class="posts">
-  <div class="post" *ngFor="let post of posts">
-    <h1>
-      <a routerLink="/postDetail/{{post.id}}">{{post.title}}</a>
-    </h1>
-    <p>{{post.description | slice:0:100}}</p>
-  </div>
+<div class="container">
+    <div class="posts">
+      <div class="row post-display-settings"
+      data-limit="8" data-show-more="4">
+          <div class="col-md-3" 
+          *ngFor="let post of posts | reverse | slice:0:limit; let i = index">
+              <div routerLink="/postDetail/{{post.id}}" class="post">
+                  <img class="image" src="https://picsum.photos/520/360/?random={{i}}" alt="">
+                  <div class="holder">
+                      <p class="date">{{ post.date | date }}</p>
+                      <h1 class="title">{{post.title}}</h1>
+                  </div>
+                </div>
+            </div>
+      </div>
+      <button class="btn btn-primary" [hidden]="hideButton" (click)="showMore()">show more...</button>
+      </div>
 </div>
 

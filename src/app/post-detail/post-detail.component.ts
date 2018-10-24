@@ -4,7 +4,6 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { PostService } from '../post.service';
 import { Post} from '../post';
-import { Observable, of, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-post-detail',

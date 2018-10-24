@@ -8,19 +8,25 @@ import { HttpClientModule }    from '@angular/common/http';
 import { AppRoutingModule } from './/app-routing.module';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { AsideComponent } from './aside/aside.component';
+import { AboutComponent } from './about/about.component';
+import { ReversePipe } from './reverse.pipe';
+import { ScrollDispatchModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
     PostDetailComponent,
-    AsideComponent
+    AsideComponent,
+    AboutComponent,
+    ReversePipe
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ScrollDispatchModule
   ],
   providers: [],
   bootstrap: [AppComponent]

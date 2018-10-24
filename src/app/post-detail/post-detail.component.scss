@@ -1,0 +1,23 @@
+.single-post {
+    padding: 20px;
+
+    .image {
+        display: block;
+        width: auto;
+        max-height: 400px;
+        margin: 0 0 20px;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 24px;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    .date {
+        color: rgb(184, 175, 175);
+        display: block;
+        margin: 0 0 10px;
+    }
+}
